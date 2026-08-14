@@ -1,0 +1,16 @@
+{
+"type": "FeatureCollection",
+"name": "temp",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::2056" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "Mettlen", "Name_EN": "Mettlen" }, "geometry": { "type": "Point", "coordinates": [ 2668032.427063696552068, 1218499.56826307461597, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Innertkirchen", "Name_EN": "Innertkirchen" }, "geometry": { "type": "Point", "coordinates": [ 2660881.407965403515846, 1172603.612113360781223, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Luzern", "Name_EN": "Lucerne" }, "geometry": { "type": "Point", "coordinates": [ 2666122.469288167078048, 1211342.606356008211151, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Sarnen", "Name_EN": "Sarnen" }, "geometry": { "type": "Point", "coordinates": [ 2661426.747939514927566, 1194211.659480662783608, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Engelberg", "Name_EN": "Engelberg" }, "geometry": { "type": "Point", "coordinates": [ 2673894.609896301757544, 1185924.451276534702629, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Littau", "Name_EN": "Littau" }, "geometry": { "type": "Point", "coordinates": [ 2662185.932208447251469, 1212437.833134907996282, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Kriens", "Name_EN": "Kriens" }, "geometry": { "type": "Point", "coordinates": [ 2665109.055173855274916, 1208220.008020155364648, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Giswil", "Name_EN": "Giswil" }, "geometry": { "type": "Point", "coordinates": [ 2656686.610524064861238, 1188705.050245936727151, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Entlebuch", "Name_EN": "Entlebuch" }, "geometry": { "type": "Point", "coordinates": [ 2647444.178776897955686, 1204892.935355309164152, 0.0 ] } }
+]
+}

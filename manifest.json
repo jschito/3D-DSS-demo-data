@@ -1,0 +1,27 @@
+{
+  "name": "3d-dss-demo",
+  "version": "1.0.0",
+  "description": "Innertkirchen-Mettlen example project for the 3D-DSS",
+  "layout": "EXAMPLE_DATA_DIR",
+  "tarball": {
+    "file": "3d-dss-demo-1.0.0.tar.gz",
+    "bytes": 4718476,
+    "sha256": "29415f2fb90581eb2346ee7c66a24a41cf796a91944231d02ae9aa5ae146a2a8"
+  },
+  "files": [
+    { "path": "data_0_tables/ATTR.csv", "bytes": 909, "sha256": "c9ffe1a27f3ce2b7dca285d1531e459f8bafdb3a161d31598c8b12ef2f4ee8db" },
+    { "path": "data_0_tables/FC.csv", "bytes": 601, "sha256": "01a40c5198028dcf105e914483766db36a1a6c4363f4b3b3ce31e36247217ba9" },
+    { "path": "data_0_tables/MG.csv", "bytes": 1253, "sha256": "9d96ed096c91192feee61959d69dbaf59fd74f3f5c629a7ac8a35a8fb0e23fa6" },
+    { "path": "data_1_study_area/digital_elevation_model/swissALTI3D_20m.tif", "bytes": 2873035, "sha256": "1c0066d9a896ad46552c327b62bec7f55e3540cddfaf87a7ef038e668fd0245d" },
+    { "path": "data_1_study_area/localities.json", "bytes": 1874, "sha256": "5c1e54bcda110efc388c5f50f2de4fd211eb5347e1df605e6e636ad15aad7d83" },
+    { "path": "data_1_study_area/points.json", "bytes": 611, "sha256": "e122dee72398a82e8d6a12f7bf4ab9f90cf01248dc36cde9e698ac3090984322" },
+    { "path": "data_1_study_area/study_area.json", "bytes": 1520, "sha256": "7dffc882fbdec59eb9eb826a4724c8de6df36c813df2bc80ab2707c58efe06a3" },
+    { "path": "data_1_study_area/substations.json", "bytes": 977, "sha256": "bfaa734616f51aded76d62a2cf44c9e25f444f97b53983a1b58a909d6d30de40" },
+    { "path": "data_2_data/Earthquake_Zones.gpkg", "bytes": 233472, "sha256": "789e2365b91272769b6db8a9828058b73b1c252e22da0863cd09cb84d344e1b0" },
+    { "path": "data_2_data/ISOS_Objekte_160815.json", "bytes": 52416, "sha256": "c44197e16a87411a24d9352f08c3a267b22427021ef3d8d8f78049ba6d6baa62" },
+    { "path": "data_2_data/Park.json", "bytes": 205556, "sha256": "756e01dd87785911ab78460d907e3598ef9ba52230393f9a48542ae668d73e5f" },
+    { "path": "data_2_data/XYKGS_Objekte_merged_160815.json", "bytes": 240127, "sha256": "b044433e46e2aabb91f5cc5e493be709e8ca095bf7474e6df5bb4321b82db1b7" },
+    { "path": "data_2_data/aqua.json", "bytes": 2707470, "sha256": "90201b39b2dce20f0864dde8265d46e3990f78c5ceb5190d4add2b1177872785" },
+    { "path": "data_2_data/biores.json", "bytes": 6843312, "sha256": "fb4c16f61ee50df267ae93bbdbc3633869556af69f28cd35149fc77f212020ee" }
+  ]
+}

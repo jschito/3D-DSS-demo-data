@@ -1,0 +1,16 @@
+# ORDER MATTERS: for a given attribute the LAST matching line wins, so the broad default
+# goes first and the specific overrides follow it. (Putting "* text=auto" last silently
+# re-enabled line-ending conversion for the payload and corrupted its digests.)
+
+# Default for the repository's own prose and config.
+* text=auto
+
+# Shell scripts keep LF whatever the platform — a CRLF script fails on Linux with the
+# famously unhelpful "bash\r: command not found".
+*.sh text eol=lf
+
+# The payload is DATA, and its bytes are checksummed in manifest.json and in the release
+# tarball's .sha256. Git must never rewrite line endings inside it: a CRLF conversion on
+# checkout would silently change every digest, so a correct clone would fail its own
+# integrity check. Treat the whole payload as binary.
+payload/** -text

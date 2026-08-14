@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "temp",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::2056" } },
+"features": [
+{ "type": "Feature", "properties": { "Id": 0, "Ort": "Innertkirchen", "POINT_X": 8.234721111000001, "POINT_Y": 46.70190284 }, "geometry": { "type": "Point", "coordinates": [ 2660882.917388475965708, 1172607.365608430467546 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "Ort": "Mettlen", "POINT_X": 8.335057133, "POINT_Y": 47.114003652000001 }, "geometry": { "type": "Point", "coordinates": [ 2668032.861757101025432, 1218500.424567618407309 ] } }
+]
+}

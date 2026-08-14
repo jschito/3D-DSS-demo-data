@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "temp",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::2056" } },
+"features": [
+{ "type": "Feature", "properties": { "FID_1": 20672, "ORIENTATIO": 100.0, "ID_SUBSTAT": 0, "ID_STATION": 0, "NAME_NUMBE": "Giswil 220kV", "SAP_NR": "S039", "ID_BETREIB": 0, "BETREIBER": null, "STUETZPUNK": "St3tzpunkt Bern", "SWISSGRID": 1, "Name": "Giswil 220kV", "Y_Koord": 185961, "X_Koord": 656092 }, "geometry": { "type": "Point", "coordinates": [ 2656091.925463842228055, 1185961.111966235563159 ] } },
+{ "type": "Feature", "properties": { "FID_1": 20690, "ORIENTATIO": 100.0, "ID_SUBSTAT": 0, "ID_STATION": 0, "NAME_NUMBE": "Littau 220kV", "SAP_NR": "S058", "ID_BETREIB": 0, "BETREIBER": "CKW", "STUETZPUNK": "StWtzpunkt Aargau", "SWISSGRID": 1, "Name": "Littau 220kV", "Y_Koord": 212284, "X_Koord": 662122 }, "geometry": { "type": "Point", "coordinates": [ 2662122.111601809971035, 1212283.870315003907308 ] } }
+]
+}

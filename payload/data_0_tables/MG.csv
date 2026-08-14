@@ -1,0 +1,8 @@
+ID,MERGE_GROUP,MAIN_OBJECTIVE,TARGET_CAT,BUF_25_QUANT,BUF_50_QUANT,BUF_75_QUANT,SHAPE_CHOICE1,SHAPE_CHOICE2,SHAPE_CHOICE3,POSITIVE_AREA,SPANNABLE,BUILT_FROM,DOMINANCE_GROUP,DOMINANCE_RANK,CORRECTION_FACTOR_OH,CORRECTION_FACTOR_EC,SUITABLE_FOR_TRANSITION_BUILDINGS,VERY_CRITICAL_IF_OVERHEAD_WOULD_PASS
+24,Earthquakes,obj_decrease_risks,Technical_Implementability,50,100,200,lin,exp,log,TRUE,TRUE,vector_data,FALSE,FALSE,1,1,FALSE,FALSE
+8,Rivers,obj_ensure_implementability,Technical_Implementability,50,100,200,lin,exp,log,TRUE,TRUE,vector_data,Gewaesser,1,1,1,FALSE,FALSE
+30,Oeffentliche_Verkehrszonen,obj_increase_bundling,Spatial_Planning,100,150,200,lin,exp,log,FALSE,TRUE,vector_data,FALSE,FALSE,1,1,NEUTRAL,FALSE
+2,BLN,obj_protect_environment,Environmental_Protection,50,200,500,lin,exp,log,TRUE,TRUE,vector_data,FALSE,FALSE,1,1,NEUTRAL,FALSE
+31,National_Parks,obj_protect_landscape,Environmental_Protection,100,250,1000,lin,exp,log,TRUE,TRUE,vector_data,Paerke,1,1,1,FALSE,FALSE
+13,Urban_Areas,obj_protect_living_space,Spatial_Planning,150,250,500,lin,log,exp,TRUE,TRUE,vector_data,FALSE,FALSE,100,1,NEUTRAL,FALSE
+14,KGS_Objects,obj_protect_living_space,Spatial_Planning,150,250,500,lin,log,exp,TRUE,TRUE,vector_data,FALSE,FALSE,1,1,NEUTRAL,FALSE

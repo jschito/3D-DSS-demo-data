@@ -1,0 +1,7 @@
+ID,FC_NAME,CAT_NAME,DESCRIPTION,FEATURE_TYPE,ORTHOGONAL,STREET_NETWORK
+3,ISOS_Objekte_160815,Spatial_Planning,ISOS inventory,Point,FALSE,FALSE
+97,Park,Environmental_Protection,National parks and parks of national importance,Polygon,FALSE,FALSE
+171,aqua,Technical_Implementability,REN habitat rivers/lakes,Polygon,FALSE,FALSE
+200,biores,Environmental_Protection,Biosphere reserves,Polygon,FALSE,FALSE
+201,XYKGS_Objekte_merged_160815,Spatial_Planning,KGS cultural property objects,Point,FALSE,FALSE
+203,Earthquake_Zones,Technical_Implementability,SIA 261 seismic hazard zones (BAFU),Polygon,FALSE,FALSE
