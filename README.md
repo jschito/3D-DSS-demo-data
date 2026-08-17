@@ -39,6 +39,19 @@ Provenance and licensing for every dataset: [ATTRIBUTIONS.md](ATTRIBUTIONS.md). 
 third-party open government datasets under their own terms — the terms are *not* the 3D-DSS
 licence, and they travel with the data, which is a large part of why this repository exists.
 
+## Licensing — the code and the data are not under the same terms
+
+| What | Terms |
+|---|---|
+| `build-payload.sh`, the documentation, and the decision model in `payload/data_0_tables/` | [BSD-3-Clause](LICENSE), matching the 3D-DSS itself |
+| Everything else under `payload/` | the publishers' own terms — see [ATTRIBUTIONS.md](ATTRIBUTIONS.md) |
+
+The distinction is not pedantry: **the geodata is not ours to licence.** It is Swiss open
+government data redistributed here, and the rights belong to swisstopo, BAFU/FOEN, BAK/FOC and
+BABS/FOCP. All of it permits commercial use and none of it is copyleft, but several datasets
+require the source to be cited — an obligation the publishing office imposes and that nobody in
+this repository can waive on your behalf.
+
 ## Using it
 
 ### From the 3D-DSS installer

@@ -1,0 +1,33 @@
+BSD 3-Clause License
+
+SPDX-License-Identifier: BSD-3-Clause
+
+Copyright © 2014–2021, ETH Zurich.
+Institute of Cartography and Geoinformation (IKG): Joram Schito.
+Planning of Landscape and Urban Systems (PLUS): Orencio Robaina Martinez de Salinas and Ralph Sonderegger.
+Principal Investigators: Martin Raubal (IKG) and Adrienne Grêt-Regamey (PLUS).
+Project Coordinator: Ulrike Wissen Hayek (PLUS).
+Copyright © 2026, Joram Schito.
+All rights reserved.
+
+SCOPE — READ THIS FIRST
+
+This licence covers the code and documentation in this repository: build-payload.sh,
+README.md, ATTRIBUTIONS.md, manifest.json and the repository configuration, together with
+the decision model expressed in payload/data_0_tables/ (FC.csv, ATTR.csv, MG.csv), which
+was authored for the Innertkirchen–Mettlen case study.
+
+IT DOES NOT COVER THE GEODATA UNDER payload/. Those files are third-party Swiss open
+government data, redistributed here under their publishers' own terms, which are not this
+licence and cannot be granted by the copyright holders above. Each dataset, its publisher
+and its terms are listed in ATTRIBUTIONS.md. In summary: all are "open use", commercial use
+is permitted, none is copyleft, and several require the source to be cited on reuse — an
+obligation imposed by the publishing federal office, which nobody here is able to waive.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this list of conditions, and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions, and the following disclaimer in the documentation and/or other materials provided with the distribution.
+3. Neither the name of ETH Zurich, the Institute of Cartography and Geoinformation (IKG), the Institute for Spatial and Landscape Development (IRL), Planning of Landscape and Urban Systems (PLUS), nor their respective logos may be used to endorse or promote products derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
