@@ -5,3 +5,4 @@ ID,FC_NAME,CAT_NAME,DESCRIPTION,FEATURE_TYPE,ORTHOGONAL,STREET_NETWORK
 200,biores,Environmental_Protection,Biosphere reserves,Polygon,FALSE,FALSE
 201,XYKGS_Objekte_merged_160815,Spatial_Planning,KGS cultural property objects,Point,FALSE,FALSE
 203,Earthquake_Zones,Technical_Implementability,SIA 261 seismic hazard zones (BAFU),Polygon,FALSE,FALSE
+204,Building_Zones,Spatial_Planning,Harmonised building zones (ARE 2022),Polygon,FALSE,FALSE

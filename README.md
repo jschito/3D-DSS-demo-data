@@ -16,7 +16,7 @@ Three reasons, in the order they matter:
    inventories is a property of the example, not of the system.
 2. **Lifecycle.** The demo can be re-cut, corrected and re-versioned without touching a line
    of the software, and the software can be released without re-releasing the data.
-3. **Size.** Today the payload is 13 MB. It is intended to grow — a full-resolution
+3. **Size.** Today the payload is 18 MB. It is intended to grow — a full-resolution
    swissALTI3D tile and TLM extracts are the obvious next additions — and none of that
    belongs in the history of a source repository.
 
@@ -47,8 +47,9 @@ licence, and they travel with the data, which is a large part of why this reposi
 | Everything else under `payload/` | the publishers' own terms — see [ATTRIBUTIONS.md](ATTRIBUTIONS.md) |
 
 The distinction is not pedantry: **the geodata is not ours to licence.** It is Swiss open
-government data redistributed here, and the rights belong to swisstopo, BAFU/FOEN, BAK/FOC and
-BABS/FOCP. All of it permits commercial use and none of it is copyleft, but several datasets
+government data redistributed here, and the rights belong to swisstopo, BAFU/FOEN, BAK/FOC,
+BABS/FOCP and — for the building zones added in v1.1.0 — ARE and the cantonal spatial-planning
+offices. All of it permits commercial use and none of it is copyleft, but several datasets
 require the source to be cited — an obligation the publishing office imposes and that nobody in
 this repository can waive on your behalf.
 

@@ -16,8 +16,9 @@ The strongest condition any of them imposes is *cite the source*.
 
 Verified 2026-08-15 against the publishers' own metadata on
 [opendata.swiss](https://opendata.swiss/) (the `rights` field each publisher sets per resource)
-and swisstopo's OGD terms. Terms are the provider's to set and can change; re-check before a
-formal release.
+and swisstopo's OGD terms; `Building_Zones.json`, added in payload v1.1.0, was verified
+2026-11-16 (details in its own section below). Terms are the provider's to set and can change;
+re-check before a formal release.
 
 ### What the opendata.swiss categories mean
 
@@ -43,8 +44,11 @@ compatible with the Swiss legal basis (GeoIG / GeoIV).
 | `biores.json` | Biosphere reserves | BAFU/FOEN | `terms_by` — **cite the source** ⚠ see note |
 | `aqua.json` | REN — national ecological network, rivers & lakes habitat | BAFU/FOEN | `terms_open` |
 | `Earthquake_Zones.gpkg` | Seismic zones per building standard SIA 261 | BAFU/FOEN (with SED) | `terms_open` |
+| `Building_Zones.json` | Building zones Switzerland (harmonised) — *Bauzonen Schweiz (harmonisiert)*, data status 1 January 2022 | Federal Office for Spatial Development (ARE), compiled from the cantonal spatial-planning offices | `terms_by` — **cite the source** ⚠ see its section |
 
-Every dataset above is **federal**. That is deliberate — see the exclusions below.
+Every dataset above is a **federal publication**. That is deliberate — see the exclusions below.
+One of them, `Building_Zones.json`, is a federal publication *of cantonal source data*; why that
+is nevertheless inside the line this file draws is explained in its own section.
 
 ISOS carries an additional statement from its publisher: all ISOS data (maps, texts, photos) are
 the intellectual property of the Confederation, **© BAK, Bern**. That is an attribution
@@ -55,6 +59,53 @@ administered as a category of *parks of national importance*, so it is recorded 
 inventory's `terms_by`. Confirm with BAFU whether it was extracted from that inventory or from a
 separate one. Either way it is `terms_open` or `terms_by`, so the copyleft answer is unaffected —
 those differ only in whether citation is required, and this file provides it in both cases.
+
+## Building zones (`payload/data_2_data/Building_Zones.json`)
+
+**Source: Federal Office for Spatial Development ARE, cantonal spatial-planning offices**
+(*Quelle: Bundesamt für Raumentwicklung ARE, Kantonale Raumplanungsfachstellen*) — the citation
+the publisher prescribes. Dataset *Bauzonen Schweiz (harmonisiert)* / *Building zones Switzerland
+(harmonized)*, **data status 1 January 2022**, the current vintage (earlier ones: 2012, 2017).
+
+| | |
+|---|---|
+| Terms | `terms_by` — *Open use. Must provide the source.* |
+| Verified | 2026-11-16 |
+| Record | <https://opendata.swiss/en/dataset/bauzonen-schweiz-harmonisiert> — every resource carries `rights = terms_by` |
+| Publisher's own statement | *"Open Data: freie Nutzung, Quellenangabe ist Pflicht"* — `Metadaten_Nutzungsbedingungen.pdf`, shipped inside the 2022 download |
+| Obtained from | <https://www.kgk-cgc.ch/geodaten/geodaten-bauzonen-schweiz> (`bauzonen_are_2022_korrigiert.zip`, GeoPackage, EPSG:2056), downloaded 2026-11-16 |
+| Extent of the extract | 6 558 polygons in the cantons BE, LU, NW and OW |
+
+**What was changed.** The file is an extract, not the original: clipped to the study area;
+generalised with a 0.5 m tolerance and snapped to a 0.1 m coordinate grid (4 polygons left smaller
+than 1 m² by that were dropped); reduced to the attributes `CH_CODE_HN` (code of
+the main use, 11–19), `CH_BEZ_D` (the publisher's German name of the main use) and `KT_KZ`
+(canton). `ZONE_NAME_EN` is **our own English translation** of `CH_BEZ_D`, not a term of the
+publisher. The data has no legal effect: the legally binding zone plans are the cantons'.
+
+**The vintage is the licence.** This is the one dataset here where that matters. The **2012 and
+2017** vintages were released under a bespoke *"Lizenz- und Nutzungsbedingungen"* (dated
+11.12.2017) that is **not** an open-use term: it allows passing the data on only in processed form
+and with that licence attached, keeps derived parts under the same conditions, and forbids selling
+or licensing the data or anything derived from it. Only the **2022** vintage is published as open
+data. This extract was therefore cut from the 2022 release itself and **not** from an older copy.
+The two are easy to tell apart: the 2022 release holds 370 281 polygons in 2 139 municipalities,
+all of which existed on 1 January 2022; an older copy still names municipalities that had merged
+by then (Filisur, Kirchenthurnen, Bagnes, Peseux). Do not refresh this file from a pre-2022
+download.
+
+⚠ **To confirm before a formal release.** The download page still prints, under the 2022 files,
+the sentence that downloading means accepting the "Lizenz- und Nutzungsbedingungen (in der
+Zip-Datei enthalten)", with a link to the 2017 licence document. The 2022 archive does not contain
+that document; it contains the open-data statement quoted above, and the opendata.swiss record
+agrees with it. The link is taken to be a leftover, but it is the publisher's page and a one-line
+confirmation from ARE would settle it.
+
+**Why this is not the cantonal data excluded below.** The zones originate with the cantons — in
+this extract including Obwalden and Lucerne — but what is redistributed here is the harmonised
+federal compilation that ARE publishes for the whole country under `terms_by`, obtained from that
+open publication. The exclusions below concern datasets obtained *directly* from a canton under
+special conditions; nothing from those copies is in this file.
 
 ## Deliberately excluded — cantonal data with non-open conditions
 
@@ -91,6 +142,11 @@ distributed via [OpenTopography](https://opentopography.org/), and require a fre
 `FC.csv`, `ATTR.csv` and `MG.csv` describe how the datasets above map onto criteria, categories
 and objectives. They are **the example's decision model**, authored for the Innertkirchen–Mettlen
 case study rather than obtained from a provider, and carry no third-party terms.
+
+`PROVENANCE.csv` records, per dataset, the provider, the terms, the required credit line and
+whether the dataset may be passed on, in the form the 3D-DSS stores them. It restates this file
+for the software and is read by the seeder, so that the example opens with its licence
+questions answered instead of marked *not checked*. If the two ever disagree, this file is right.
 
 ## Not included here
 
